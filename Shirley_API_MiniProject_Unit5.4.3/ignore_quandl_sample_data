@@ -1,0 +1,91 @@
+
+
+
+{"dataset":
+          {"id":10095370,
+           "dataset_code":"AFX_X",
+           "database_code":"FSE",
+           "name":"Carl Zeiss Meditec (AFX_X)",
+           "description":"Stock Prices for Carl Zeiss Meditec (2020-05-15) from the Frankfurt Stock Exchange.\u003cbr\u003e\u003cbr\u003eTrading System: Xetra\u003cbr\u003e\u003cbr\u003eISIN: DE0005313704",
+           "refreshed_at":"2020-05-29T22:16:21.973Z",
+           "newest_available_date":"2020-05-29",
+           "oldest_available_date":"2000-06-07",
+           "column_names":["Date",
+                           "Open",
+                           "High",
+                           "Low",
+                           "Close",
+                           "Change",
+                           "Traded Volume",
+                           "Turnover",
+                           "Last Price of the Day",
+                           "Daily Traded Units",
+                           "Daily Turnover"],
+            "frequency":"daily",
+            "type":"Time Series",
+            "premium":false,
+            "limit":2,
+            "transform":null,
+            "column_index":null,
+            "start_date":"2020-05-20",
+            "end_date":"2020-05-25",
+            "data":[["2020-05-25",
+                     88.6,
+                     92.7,
+                     88.1,
+                     92.6,
+                     null,
+                     101335.0,
+                     9240143.65,
+                     null,
+                     null,
+                     null],
+
+                    ["2020-05-22",
+                    87.35,
+                    88.5,
+                    85.45,
+                    87.65,
+                    null,
+                    170878.0,
+                    14839809.55,
+                    null,
+                    null,
+                    null]
+                   ],
+            "collapse":null,
+            "order":null,
+            "database_id":6129
+           }
+}
+
+
+
+url3 = 'https://www.quandl.com/api/v3/datasets/FSE/AFX_X.json?end_date=2020-05-31&start_date=2020-05-01&limit=5&transform=diff&api_key='+API_KEY
+
+{"dataset":{"id":10095370,
+            "dataset_code":"AFX_X",
+            "database_code":"FSE",
+            "name":"Carl Zeiss Meditec (AFX_X)",
+            "description":"Stock Prices for Carl Zeiss Meditec (2020-05-15) from the Frankfurt Stock Exchange.\u003cbr\u003e\u003cbr\u003eTrading System: Xetra\u003cbr\u003e\u003cbr\u003eISIN: DE0005313704",
+            "refreshed_at":"2020-05-29T22:16:21.973Z",
+            "newest_available_date":"2020-05-29",
+            "oldest_available_date":"2000-06-07","column_names":["Date","Open","High","Low","Close","Change","Traded Volume","Turnover","Last Price of the Day","Daily Traded Units","Daily Turnover"],"frequency":"daily","type":"Time Series","premium":false,"limit":5,"transform":"diff","column_index":null,"start_date":"2020-05-01","end_date":"2020-05-29","data":[["2020-05-29",2.95,1.4,2.85,0.64999999999999,null,9511.0,7078525.3,null,null,null],["2020-05-28",-2.9,0.5,1.0,4.15,null,-63855.0,-10945373.8,null,null,null],["2020-05-27",-0.099999999999994,-2.15,-3.3,-3.55,null,-3083.0,-1334642.45,null,null,null],["2020-05-26",2.5,0.64999999999999,1.6,-1.75,null,194254.0,17848995.4,null,null,null],["2020-05-25",1.25,4.2,2.65,4.95,null,-69543.0,-5599665.9,null,null,null]],"collapse":null,"order":null,"database_id":6129}}
+
+
+
+
+
+
+url2 = 'https://www.quandl.com/api/v3/datasets/FSE/AFX_X.json?end_date=2020-05-31&start_date=2020-05-01&limit=5&api_key='+API_KEY
+
+
+         ["Date",      "Open", "High", "Low", "Close", "Change", "Traded Volume", "Turnover", "Last Price of the Day", "Daily Traded Units", "Daily Turnover"]
+
+'data': [
+         ['2020-05-29', 91.05, 93.1,  90.25, 92.1,      None,     238162.0,        21887648.1,  None, None, None], 
+         ['2020-05-28', 88.1,  91.7,  87.4,  91.45,     None,     228651.0,        14809122.8,  None, None, None], 
+         ['2020-05-27', 91.0,  91.2,  86.4,  87.3,      None,     292506.0,        25754496.6,  None, None, None], 
+         ['2020-05-26', 91.1,  93.35, 89.7,  90.85,     None,     295589.0,        27089139.05, None, None, None], 
+         ['2020-05-25', 88.6,  92.7,  88.1,  92.6,      None,     101335.0,        9240143.65,  None, None, None]
+        ]
